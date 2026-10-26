@@ -280,7 +280,6 @@ jobs:
             /root/.gradle/wrapper
             ${{ steps.extract.outputs.project_root }}/.gradle
          key: gradle-${{ runner.os }}-${{ hashFiles('**/build.gradle*', '**/gradle-wrapper.properties', '**/libs.versions.toml') }}
-
          restore-keys: |
           gradle-${{ runner.os }}-${{ steps.toolchain.outputs.gradle_version }}-
             gradle-
